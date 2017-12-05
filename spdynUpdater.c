@@ -1,11 +1,7 @@
 /***************************************************************
  Copyright (C) 2014 by 3S-Berlin
-
- Contact: Bjoern Stremmel,
- 3s sensors systems solutions GbR
- Warener Str. 5,
- 12683 Berlin, Germany, stremmel@3sberlin.de
-
+ Copyright (C) 2017 by Steven Seifried
+ 
  This program is free software; you can redistribute and/or
  modify it under the terms of the GNU General Public License
  version 2 as published by the Free Software Foundation.
