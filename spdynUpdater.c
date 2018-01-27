@@ -65,7 +65,7 @@ int checkResponse(char *);
 
 // Hosts to check the current IP-Address
 // *************************************
-char * ipHost[NUMBER_IP_HOSTS] = { "checkip.spdy.de", "checkip.dyn.com", "checkip.dyn.org" };  // list of Hosts to check the IP
+char * ipHost[NUMBER_IP_HOSTS] = { "checkip.spdyn.de", "checkip.dyn.com", "checkip.dyn.org" };  // list of Hosts to check the IP
 
 
 // URL for the Host to be updated, e.g. update.spdyn.de (SPDYN) or dynupdate.no-ip.com (No-IP)
