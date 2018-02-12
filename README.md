@@ -1,6 +1,8 @@
 (en/de)
 The spdyn-updater is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
+Feel free to read the To Do list and help with the client to improve or to expand with new features
+
 I change the URLs from spdns.de to spdyn.de
 
 spdyn is an Dynamic DNS Service from Securepoint GmbH. In 2016, the Securepoint GmbH has renamed his own DDNS service from spdns to spdyn.
