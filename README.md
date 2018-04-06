@@ -3,7 +3,7 @@ The spdyn-updater is based on the spdns Dynamic DNS Update-Client from http://my
 
 Feel free to read the To Do list and help with the client to improve or to expand with new features
 
-I change the URLs from spdns.de to spdyn.de
+I change the URLs from spdns.de to spdyn.de and add support for IPv6
 
 spdyn is an Dynamic DNS Service from Securepoint GmbH. In 2016, the Securepoint GmbH has renamed his own DDNS service from spdns to spdyn.
 
@@ -17,7 +17,7 @@ spdynu.conf is the config file
 
 Der spdyn-updater basiert auf dem spdns Dynamic DNS Update-Client von http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
-Ich habe die URLs von spdns.de zu spdyn.de geändert
+Ich habe die URLs von spdns.de zu spdyn.de geändert und es wurde der Support für IPv6 hinzugefügt
 
 spdyn ist Dynamic DNS Service der Securepoint GmbH. Im Jahr 2016 hat die Securepoint GmbH den eigenen Dynamic DNS Dienst von spdns.de in spdyn umbenannt. Die Server der Securepoint GmbH und somit auch die Server des Dynamic DNS Dienstes spdyn stehen in Deutschland
 
