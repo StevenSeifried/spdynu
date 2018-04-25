@@ -225,7 +225,7 @@ int main(int argc, char *argv[])
     if (currentIPv6 != NULL) free(currentIPv6);
 
     currentIPv4 = strdup(checkedIPv4);
-    currentIPv6 = strdup(checkedIPv6);}
+    currentIPv6 = strdup(checkedIPv6);
 
     // assuming that all hosts need an Update
     for (i = 0; i<nrHosts; i++)
@@ -272,7 +272,7 @@ int main(int argc, char *argv[])
       }
     }
     writeIPFile();
-  
+  }
 
   return 0;
 }
