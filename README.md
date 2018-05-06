@@ -1,4 +1,3 @@
-(en/de)
 The spdyn-updater is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
 Feel free to read the To Do list and help with the client to improve or to expand with new features
@@ -13,14 +12,12 @@ spdynUpdater.c is the Source Code in C
 spdynUpdater is the executable program
 spdynu.conf is the config file
 
-------------------------------------------------------------------------------------------------------------------------------------------
+The development of spdyn-updater mainly takes place on GitHub.
 
-Der spdyn-updater basiert auf dem spdns Dynamic DNS Update-Client von http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
+Alternative:
 
-Ich habe die URLs von spdns.de zu spdyn.de geändert und es wurde der Support für IPv6 hinzugefügt
+GitLab: https://gitlab.com/StevenSeifried
+Bitbucket: https://bitbucket.org/canoxnet/
 
-spdyn ist Dynamic DNS Service der Securepoint GmbH. Im Jahr 2016 hat die Securepoint GmbH den eigenen Dynamic DNS Dienst von spdns.de in spdyn umbenannt. Die Server der Securepoint GmbH und somit auch die Server des Dynamic DNS Dienstes spdyn stehen in Deutschland
+compile with the command. gcc spdynUpdater.c -o spdynu
 
-spdynUpdater.c ist der Quellcode in C
-spdynUpdater ist das ausführbare Programm
-spdynu.conf ist die Konfigurationsdatei
