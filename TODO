@@ -2,4 +2,4 @@
 
 Here is the To Do list. If you know how to do one of the desired features, please do a pull request.
 
-- E-mail notification if anything fails (for example, the spdynu process has ended or the IP address update (IPv4 or IPv6 or both)
+- Add systemd Script
