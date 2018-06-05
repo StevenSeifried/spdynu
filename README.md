@@ -16,8 +16,4 @@ The development of spdyn-updater mainly takes place on GitHub.
 
 Alternative:
 
-GitLab: https://gitlab.com/StevenSeifried
-Bitbucket: https://bitbucket.org/canoxnet/
-
 compile with the command. gcc spdynUpdater.c -o spdynu
-
