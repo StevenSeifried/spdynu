@@ -1,0 +1,2 @@
+build:
+  - gcc spdynUpdater.c -o spdynu
