@@ -4,30 +4,24 @@ build_x64:
   before_script: 
     - apt update && apt -y install make autoconf build-essential
   script: gcc spdynUpdater.c -o spdynu_x64
-  after_script:
-    - mv spdynu_x64 releases
   artifacts:
     paths:
-      - releases/spdynu_x64
+      - spdynu_x64
       
 build_armhf:
   stage: build
   before_script: 
     - apt update && apt -y install make autoconf build-essential gcc-arm-linux-gnueabihf gcc-aarch64-linux-gnu
   script: arm-linux-gnueabihf-gcc spdynUpdater.c -o spdynu_armhf
-  after_script:
-    - mv spdynu_armhf releases
   artifacts:
     paths:
-      - releases/spdynu_armhf
+      - spdynu_armhf
       
 build_arm64:
   stage: build
   before_script: 
     - apt update && apt -y install make autoconf build-essential gcc-aarch64-linux-gnu
   script: aarch64-linux-gnu-gcc spdynUpdater.c -o spdynu_arm64
-  after_script:
-    - mv spdynu_arm64 releases
   artifacts:
     paths:
-      - releases/spdynu_arm64
+      - spdynu_arm64
