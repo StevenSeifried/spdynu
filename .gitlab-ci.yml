@@ -1,4 +1,4 @@
-image: gcc
+image: cmake
 
 stages:
   - build
@@ -7,6 +7,6 @@ stages:
 build:
   stage: build
   before_script: 
-    - apt update && apt -y install make autoconf build-essential
+    - apt update && apt -y install make autoconf build-essential cmake
     - uname -a
-  script: "gcc spdynUpdater.c -o releases/spdynu"
+  script: cmake spdynUpdater.c -o releases/spdynu
