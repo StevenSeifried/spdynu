@@ -1,3 +1,4 @@
+image: gcc
 stages:
   - build
   - deploy
@@ -7,6 +8,9 @@ build:
   before_script: 
     - apt update && apt -y install make autoconf build-essential cmake
     - ls
-  script: gcc spdynUpdater.c -o releases/spdynu
+  script: gcc spdynUpdater.c -o spdynu
+  artifacts:
+    paths:
+      - spdynu
   after_script:
     - ls
