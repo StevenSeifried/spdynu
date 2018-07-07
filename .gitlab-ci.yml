@@ -3,6 +3,3 @@ image: gcc
 build:
   stage: build
   script: gcc spdynUpdater.c -o spdynu
-  artifacts:
-    paths:
-      - releases
