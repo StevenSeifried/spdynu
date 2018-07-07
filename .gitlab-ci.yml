@@ -5,7 +5,13 @@ build:
   before_script: 
     - apt update && apt -y install make autoconf build-essential
   script: gcc spdynUpdater.c -o releases/spdynu
+  artifacts:
+   paths:
+    - releases
 
 pages:
   stage: deploy
   script: gcc spdynUpdater.c -o releases/spdynu
+  artifacts:
+   paths:
+    - releases
