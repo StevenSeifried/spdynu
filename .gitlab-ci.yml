@@ -5,5 +5,4 @@ build:
   before_script: 
     - apt update && apt -y install make autoconf build-essential
     - cd releases
- 
-script: gcc spdynUpdater.c -o releases/spdynu
+  script: gcc spdynUpdater.c -o releases/spdynu
