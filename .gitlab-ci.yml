@@ -3,5 +3,5 @@ image: gcc
 build:
   stage: build
   before_script: 
-    - apt update && apt -y install make autoconf 
+    - apt update && apt -y install make autoconf build-essential 
   script: gcc spdynUpdater.c -o spdynu
