@@ -1,5 +1,9 @@
 image: gcc
 
+stages:
+  - build
+  - deploy
+
 build:
   stage: build
   before_script: 
