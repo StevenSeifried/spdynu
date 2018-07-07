@@ -8,9 +8,7 @@ build:
   before_script: 
     - apt update && apt -y install make autoconf build-essential cmake
     - ls
-  script: gcc spdynUpdater.c -o spdynu
+  script: gcc spdynUpdater.c -o releases/spdynu
   artifacts:
     paths:
-      - spdynu
-  after_script:
-    - ls
+      - releases/spdynu
