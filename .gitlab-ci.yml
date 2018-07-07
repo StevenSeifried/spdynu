@@ -1,14 +1,20 @@
 image: gcc
-stages:
-  - build
-  - deploy
-
-build:
+build_x64:
   stage: build
   before_script: 
-    - apt update && apt -y install make autoconf build-essential cmake
-    - ls
-  script: gcc spdynUpdater.c -o releases/spdynu
+    - apt update && apt -y install make autoconf build-essential gcc-arm-linux-gnueabihf
+    - rm releases/spdynu_x64
+  script: gcc spdynUpdater.c -o releases/spdynu_x64
   artifacts:
     paths:
-      - releases/spdynu
+      - releases/spdynu_x64
+      
+build_armhf:
+  stage: build
+  before_script: 
+    - apt update && apt -y install make autoconf build-essential gcc-arm-linux-gnueabihf
+    - rm releases/spdynu_armhf
+  script: arm-linux-gnueabihf-gcc spdynUpdater.c -o releases/spdynu_armhf
+  artifacts:
+    paths:
+      - releases/spdynu_armhf
