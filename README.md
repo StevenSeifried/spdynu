@@ -12,4 +12,8 @@ spdynUpdater.c is the Source Code in C
 spdynUpdater is the executable program
 spdynu.conf is the config file
 
-compile with the command. gcc spdynUpdater.c -o spdynu
+compile with the command:
+
+gcc spdynUpdater.c -o spdynu
+
+[![pipeline status](https://gitlab.com/CANOXNET/spdyn-updater/badges/master/pipeline.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
