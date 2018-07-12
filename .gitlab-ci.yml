@@ -1,4 +1,4 @@
-image: gcc
+image: debian:stretch
 build_x64:
   stage: build
   before_script: 
