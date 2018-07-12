@@ -1,4 +1,4 @@
-[![maintained status](https://gitlab.com/CANOXNET/spdyn-updater/badges/master/maintained.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
+[![maintained status](https://canox.net/wp-content/uploads/2018/07/maintained.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
 [![pipeline status](https://gitlab.com/CANOXNET/spdyn-updater/badges/master/pipeline.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
 The spdyn-updater is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
