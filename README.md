@@ -12,9 +12,8 @@ spdyn is an Dynamic DNS Service from Securepoint GmbH. In 2016, the Securepoint 
 
 The servers of Securepoint GmbH and also the servers of the dynamic DNS service spdyn are in Germany.
 
-spdynUpdater.c is the Source Code in C
-spdynUpdater is the executable program
-spdynu.conf is the config file
+ - spdynUpdater.c is the Source Code in C
+ - spdynu.conf is the config file
 
 compile with the command:
 
