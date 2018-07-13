@@ -6,7 +6,7 @@ build_x64:
   script: gcc spdynUpdater.c -o spdynu_x64
   artifacts:
     paths:
-      - spdynu_x64
+      - releases/*
       
 build_armhf:
   stage: build
@@ -15,7 +15,7 @@ build_armhf:
   script: arm-linux-gnueabihf-gcc spdynUpdater.c -o spdynu_armhf
   artifacts:
     paths:
-      - spdynu_armhf
+      - releases/*
       
 build_arm64:
   stage: build
@@ -24,4 +24,4 @@ build_arm64:
   script: aarch64-linux-gnu-gcc spdynUpdater.c -o spdynu_arm64
   artifacts:
     paths:
-      - spdynu_arm64
+      - releases/*
