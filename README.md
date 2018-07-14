@@ -16,6 +16,6 @@ The servers of Securepoint GmbH and also the servers of the dynamic DNS service 
  - spdynUpdater.c is the Source Code in C
  - spdynu.conf is the config file
 
-compile with the command:
+compile it with the command:
 
 gcc spdynUpdater.c -o spdynu
