@@ -16,12 +16,3 @@ build_armhf:
   artifacts:
     paths:
       - spdynu_armhf
-      
-build_arm64:
-  stage: build
-  before_script: 
-    - apt update && apt -y install make autoconf build-essential gcc-aarch64-linux-gnu
-  script: aarch64-linux-gnu-gcc spdynUpdater.c -o spdynu_arm64
-  artifacts:
-    paths:
-      - spdynu_arm64
