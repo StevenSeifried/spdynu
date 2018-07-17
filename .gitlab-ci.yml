@@ -1,0 +1,20 @@
+stages: 
+    - build-amd64
+#    - build-i386
+    
+build-amd64:
+   stage: build-amd64
+   image: amd64/debian:stable
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - figlet BUILD
+   - dpkg-buildpackage -us -uc
+   - mkdir build
+   - mv ../*.deb build/
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
