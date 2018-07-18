@@ -1,6 +1,8 @@
 stages: 
     - build-amd64
     - build-i386
+    - build-arm32v7
+    - build-arm64v8
     
 build-amd64:
    stage: build-amd64
@@ -12,8 +14,8 @@ build-amd64:
    - gcc spdynUpdater.c -o spdynu
    - figlet BUILD
    - dpkg-buildpackage -us -uc
-   - mkdir -p build/amd64
-   - mv ../*.deb build/amd64
+   - mkdir -p build/
+   - mv ../*.deb build/
    artifacts:
        name: "spdynu"
        paths:
@@ -29,10 +31,43 @@ build-i386:
    - gcc spdynUpdater.c -o spdynu
    - figlet BUILD
    - dpkg-buildpackage -us -uc
-   - mkdir -p build/i386
-   - mv ../*.deb build/i386
+   - mkdir -p build
+   - mv ../*.deb build/
    artifacts:
        name: "spdynu"
        paths:
         - build/*
 
+build-arm32v7:
+   stage: build-arm32v7
+   image: arm32v7/debian:stable
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - figlet BUILD
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build/
+   - mv ../*.deb build/
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
+
+build-arm64v8:
+   stage: build-arm64v8
+   image: arm64v8/debian:stable
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - figlet BUILD
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build/
+   - mv ../*.deb build/
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
