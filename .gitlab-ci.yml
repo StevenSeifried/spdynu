@@ -37,20 +37,3 @@ build-i386:
        name: "spdynu"
        paths:
         - build/*
-
-build-arm64v8:
-   stage: build-arm64v8
-   image: arm64v8/debian:stable
-   script:
-   - apt update
-   - apt-get -y upgrade
-   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
-   - gcc spdynUpdater.c -o spdynu
-   - figlet BUILD
-   - dpkg-buildpackage -us -uc
-   - mkdir -p build/
-   - mv ../*.deb build/
-   artifacts:
-       name: "spdynu"
-       paths:
-        - build/*
