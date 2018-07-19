@@ -1,38 +1,114 @@
 stages: 
-    - build-amd64
-    - build-i386
-    - build-arm32v7
-    - build-arm64v8
+    - build-stretch-amd64
+    - build-stretch-i386
+    - build-xenial-amd64
+    - build-xenial-i386
+    - build-bionic-amd64
+    - build-bionic-i386
     
-build-amd64:
-   stage: build-amd64
+build-stretch-amd64:
+   stage: build-stretch-amd64
    image: amd64/debian:stable
    script:
    - apt update
    - apt-get -y upgrade
-   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
+   - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
-   - figlet BUILD
    - dpkg-buildpackage -us -uc
    - mkdir -p build/
    - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-stretch-amd64.deb
    artifacts:
        name: "spdynu"
        paths:
         - build/*
 
-build-i386:
-   stage: build-i386
+build-stretch-i386:
+   stage: build-stretch-i386
    image: amd64/debian:stable
    script:
    - apt update
    - apt-get -y upgrade
-   - apt-get -y install apt-utils figlet build-essential devscripts debhelper
+   - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
-   - figlet BUILD
    - dpkg-buildpackage -us -uc
    - mkdir -p build
    - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-stretch-i386.deb
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
+
+build-xenial-amd64:
+   stage: build-xenial-amd64
+   image: amd64/ubuntu:xenial
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build/
+   - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-xenial-amd64.deb
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
+
+build-xenial-i386:
+   stage: build-xenial-i386
+   image: amd64/ubuntu:xenial
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build
+   - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-xenial-i386.deb
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
+
+build-bionic-amd64:
+   stage: build-bionic-amd64
+   image: amd64/ubuntu:bionic
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build/
+   - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-bionic-amd64.deb
+   artifacts:
+       name: "spdynu"
+       paths:
+        - build/*
+
+build-bionic-i386:
+   stage: build-bionic-i386
+   image: amd64/ubuntu:bionic
+   script:
+   - apt update
+   - apt-get -y upgrade
+   - apt-get -y install apt-utils build-essential devscripts debhelper
+   - gcc spdynUpdater.c -o spdynu
+   - dpkg-buildpackage -us -uc
+   - mkdir -p build
+   - mv ../*.deb build/
+   - cd build
+   - mv *.deb spdynu-bionic-i386.deb
    artifacts:
        name: "spdynu"
        paths:
