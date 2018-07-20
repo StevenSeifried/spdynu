@@ -1,9 +1,8 @@
 [![maintained status](https://canox.net/wp-content/uploads/2018/07/maintained.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
 [![pipeline status](https://gitlab.com/CANOXNET/spdyn-updater/badges/master/pipeline.svg)](https://gitlab.com/CANOXNET/spdyn-updater/commits/master)
 [![license status](https://canox.net/wp-content/uploads/2018/07/license.svg)](https://gitlab.com/CANOXNET/spdynu/blob/master/LICENSE)
-[![gitter](https://canox.net/wp-content/uploads/2018/07/gitter.svg)](https://gitter.im/CANOX-NET/spdynu?source=orgpage)
 
-The spdyn-updater is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
+The spdynu is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
 Feel free to read the To Do list and help with the client to improve or to expand with new features
 
