@@ -77,7 +77,7 @@ char * ipHost[NUMBER_IP_HOSTS] = { "checkip.spdyn.de", "checkip.dyn.com", "check
 #define DEFAULT_CONF_FILENAME "/etc/spdynu.conf"
 
                                                                                                 // path of config file and log file. Note that both files must be writeable.
-#define DEFAULT_LOG_FILENAME  "/home/pi/spdynu.log"
+#define DEFAULT_LOG_FILENAME  "/home/$USER/spdynu.log"
 #define DEFAULT_IP_FILENAME  "/tmp/spdynuIP.cnf"
 
 char *confFileName = NULL;
