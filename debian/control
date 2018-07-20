@@ -6,8 +6,7 @@ Build-Depends: debhelper (>=10)
 Standards-Version: 4.1.3
 Homepage: https://gitlab.com/CANOXNET/spdynu
 
-Package: spdyn
+Package: spdynu
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Updater for spdyn.de
-
