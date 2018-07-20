@@ -12,6 +12,7 @@ build-stretch-amd64:
    - apt-get -y upgrade
    - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
+   - chmod u+x spdyn
    - dpkg-buildpackage -us -uc
    - mkdir -p build/
    - mv ../*.deb build/
@@ -30,7 +31,7 @@ build-buster-amd64:
    - apt-get -y upgrade
    - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
-   - chmod +x spdynu
+   - chmod u+x  spdynu
    - dpkg-buildpackage -us -uc
    - mkdir -p build/
    - mv ../*.deb build/
@@ -49,7 +50,7 @@ build-xenial-amd64:
    - apt-get -y upgrade
    - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
-   - chmod +x spdynu
+   - chmod u+x spdynu
    - dpkg-buildpackage -us -uc -d
    - mkdir -p build/
    - mv ../*.deb build/
@@ -68,7 +69,7 @@ build-bionic-amd64:
    - apt-get -y upgrade
    - apt-get -y install apt-utils build-essential devscripts debhelper
    - gcc spdynUpdater.c -o spdynu
-   - chmod +x spdynu
+   - chmod u+x  spdynu
    - dpkg-buildpackage -us -uc -d
    - mkdir -p build/
    - mv ../*.deb build/
