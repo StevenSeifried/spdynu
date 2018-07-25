@@ -18,3 +18,11 @@ The servers of Securepoint GmbH and also the servers of the dynamic DNS service 
 Compile it with the command:
 
 gcc spdynUpdater.c -o spdynu
+
+Downloads are available at the following URL:
+
+[https://cloud.canox.net/index.php/s/Jbj7cwnnQWtjeTD](https://cloud.canox.net/index.php/s/Jbj7cwnnQWtjeTD)
+
+Please note the following open issues:
+
+[https://gitlab.com/CANOXNET/spdynu/issues](https://gitlab.com/CANOXNET/spdynu/issues)
