@@ -1,6 +1,6 @@
-spdynu (2018.07) testing; urgency=medium
+spdynu (2018.08) master; urgency=medium
 
   * Initial release
 
- -- Steven Seifried <gitlab@canox.net>  Tue, 17 Jul 2018 18:58:19 +0200
+ -- Steven Seifried <gitlab@canox.net>  Thu, 16 Aug 2018 11:15:00 +0200
 
