@@ -1,3 +1,4 @@
 spdynu /bin/
 spdynu.conf /etc/
-
+spdynu.service /etc/systemd/system/
+spdynu.timer /etc/systemd/system
