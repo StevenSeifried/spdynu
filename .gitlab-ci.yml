@@ -36,7 +36,7 @@ build-buster-amd64:
    - mkdir -p build/
    - mv ../*.deb build/
    - cd build
-   - mv spdynu_2018.07_all.deb spdynu-buster-amd64.deb
+   - mv spdynu_2018.08_all.deb spdynu-buster-amd64.deb
    artifacts:
        name: "spdynu"
        paths:
@@ -55,7 +55,7 @@ build-xenial-amd64:
    - mkdir -p build/
    - mv ../*.deb build/
    - cd build
-   - mv spdynu_2018.07_all.deb spdynu-xenial-amd64.deb
+   - mv spdynu_2018.08_all.deb spdynu-xenial-amd64.deb
    artifacts:
        name: "spdynu"
        paths:
@@ -74,7 +74,7 @@ build-bionic-amd64:
    - mkdir -p build/
    - mv ../*.deb build/
    - cd build
-   - mv spdynu_2018.07_all.deb spdynu-bionic-amd64.deb
+   - mv spdynu_2018.08_all.deb spdynu-bionic-amd64.deb
    artifacts:
        name: "spdynu"
        paths:
