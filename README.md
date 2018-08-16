@@ -26,3 +26,7 @@ Downloads are available at the following URL:
 Please note the following open issues:
 
 [https://gitlab.com/CANOXNET/spdynu/issues](https://gitlab.com/CANOXNET/spdynu/issues)
+
+# TODO
+
+- Support for IPv6 was removed with Release 2018.08, but will add back in the future
