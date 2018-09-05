@@ -1,5 +1,5 @@
 [Unit]
-Description=Run spdynu 15 Minutes after boot and after then every 10 Minutes
+Description=Run spdynu 5 Minutes after boot and after then every 10 Minutes
 
 [Timer]
 OnBootSec=5min
