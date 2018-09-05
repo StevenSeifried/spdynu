@@ -30,3 +30,5 @@ Please note the following open issues:
 # TODO
 
 - Support for IPv6 was removed with Release 2018.08, but will add back in the future
+- Build .deb Packages for armhf and arm64 for Debian 8, Debian 9, Ubuntu 16.04 and 18.04 with 
+GitLab CI (Unfortunately, this does not work at the moment)
