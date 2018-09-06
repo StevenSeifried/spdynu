@@ -99,7 +99,7 @@ int nrHosts = 0;
 
 void showUsage(char *prgname) {
 		printf("Usage: %s [--configfile configfile]\n", prgname);
-		printf("Usage: %s [--version]\n", prgname);
+		printf("Usage: %s [version]\n", prgname);
 }
 
 /*************************************************************************************
@@ -124,7 +124,7 @@ int evalCommandLine(int argc, char *argv[])
 			confFileName = strdup(optarg);
 			break;
 		case 'v':
-			--version = 2018.09;
+			version = 2018.09;
 			break;
 		case 'h':
 			showUsage(argv[0]);
