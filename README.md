@@ -4,7 +4,8 @@
 
 The spdynu is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client
 
-Feel free to read the To Do list and help with the client to improve or to expand with new features
+Feel free to read the TODO section below and help with the client to improve or to expand with 
+new features
 
 I change the URLs from spdns.de to spdyn.de and add support for IPv6
 
@@ -32,3 +33,4 @@ Please note the following open issues:
 - Support for IPv6 was removed with Release 2018.08, but will add back in the future
 - Build .deb Packages for armhf and arm64 for Debian 8, Debian 9, Ubuntu 16.04 and 18.04 with 
 GitLab CI (Unfortunately, this does not work at the moment)
+- Add --version and/or -v Parameter
