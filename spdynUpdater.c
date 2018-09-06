@@ -99,6 +99,7 @@ int nrHosts = 0;
 
 void showUsage(char *prgname) {
 		printf("Usage: %s [--configfile configfile]\n", prgname);
+		printf("Usage: %s [--version]\n", prgname);
 }
 
 /*************************************************************************************
@@ -109,17 +110,21 @@ int evalCommandLine(int argc, char *argv[])
 {
 	struct option long_options[] = {
 		{"configfile", optional_argument, 0, 'c'},
+		{"version",    optional_argument, 0, 'v'},
 		{"help",       no_argument,       0, 'h'},
 		{0, 0, 0, 0}
 	};
 
 	int ch;
-	while ((ch = getopt_long_only (argc, argv, "c:h", long_options, NULL)) > -1)
+	while ((ch = getopt_long_only (argc, argv, "c:v:h", long_options, NULL)) > -1)
 	{
 		switch(ch) {
 		case 'c':
 			// confFileName = (char*)malloc( strlen( optarg ) + 1 );
 			confFileName = strdup(optarg);
+			break;
+		case 'v':
+			version = 2018.09;
 			break;
 		case 'h':
 			showUsage(argv[0]);
