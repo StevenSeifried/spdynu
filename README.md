@@ -22,7 +22,7 @@ gcc spdynUpdater.c -o spdynu
 
 Downloads are available at the following URL:
 
-[https://cloud.canox.net/index.php/s/Lo6zYaEBPL2GtzF](https://cloud.canox.net/index.php/s/Lo6zYaEBPL2GtzF)
+[https://cloud.canox.net/s/QAkpW5LtbB56KRx](https://cloud.canox.net/s/QAkpW5LtbB56KRx)
 
 Please note the following open issues:
 
