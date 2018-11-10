@@ -2,6 +2,4 @@
 
 Here is the To Do list. If you know how to do one of the desired features, please do a pull request.
 
-- Add systemd Script (Makes a cronjob obsolete (I hope so))
-- Remove IPv6 Adress in spdynuIP.cnf when it is diabled
-- Automatic package creation via GitLab CI (see https://gitlab.com/CANOXNET/spdynu/issues/2)
+- Nothing to do :)

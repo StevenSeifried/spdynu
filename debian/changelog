@@ -1,6 +1,6 @@
-spdynu (2018.09) master; urgency=medium
+spdynu (2018.11) bionic; urgency=medium
 
   * Initial release
 
- -- Steven Seifried <gitlab@canox.net>  Sun, 16 Sep 2018 20:30:00 +0200
+ -- Steven Seifried <gitlab@canox.net>  Sat, 10 Nov 2018 17:45:00 +0100
 
