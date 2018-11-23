@@ -18,7 +18,7 @@ The servers of Securepoint GmbH and also the servers of the dynamic DNS service 
 
 Packages are available for amd64, armhf and arm64 under [https://apt.canox.net/](https://apt.canox.net/)
 
-wget https://apt.canox.net/apt.canox.net.gpg.key && sudo apt-key add apt.canox.net.gpg.key
+wget --no-check-certificate https://apt.canox.net/apt.canox.net.gpg.key && sudo apt-key add apt.canox.net.gpg.key
 
 For amd64
 
