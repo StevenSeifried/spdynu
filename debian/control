@@ -9,4 +9,4 @@ Homepage: https://gitlab.com/CANOXNET/spdynu
 Package: spdynu
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Updater for spdyn.de
+Description: DynDNS Updater for spdyn.de

@@ -7,7 +7,7 @@ The spdynu is based on the spdns Dynamic DNS Update-Client from http://my5cent.s
 Feel free to read the TODO section below and help with the client to improve or to expand with 
 new features
 
-I change the URLs from spdns.de to spdyn.de and add support for IPv6
+I change the URLs from spdns.de to spdyn.de
 
 spdyn is an Dynamic DNS Service from Securepoint GmbH. In 2016, the Securepoint GmbH has renamed his own DDNS service from spdns to spdyn.
 
@@ -16,21 +16,23 @@ The servers of Securepoint GmbH and also the servers of the dynamic DNS service 
  - spdynUpdater.c is the Source Code in C
  - spdynu.conf is the config file
 
-Compile it with the command:
+Packages are available for amd64, armhf and arm64 under [https://apt.canox.net/](https://apt.canox.net/)
 
-gcc spdynUpdater.c -o spdynu
+curl -s https://apt.canox.net/apt.canox.net.gpg.key && sudo apt-key add -
 
-Downloads are available at the following URL:
+For amd64
 
-[https://cloud.canox.net/s/QAkpW5LtbB56KRx](https://cloud.canox.net/s/QAkpW5LtbB56KRx)
+echo "deb [ARCH=amd64] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
+
+For arm64
+
+echo "deb [ARCH=arm64] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
+
+For armf
+
+echo "deb [ARCH=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
 
 Please note the following open issues:
 
 [https://gitlab.com/CANOXNET/spdynu/issues](https://gitlab.com/CANOXNET/spdynu/issues)
 
-# TODO
-
-- Support for IPv6 was removed with Release 2018.08, but will add back in the future
-- Build .deb Packages for armhf and arm64 for Debian 8, Debian 9, Ubuntu 16.04 and 18.04 with 
-GitLab CI (Unfortunately, this does not work at the moment)
-- Add --version and/or -v Parameter
