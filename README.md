@@ -32,3 +32,4 @@ echo "deb [arch=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/s
 
 - Add IPv6 Support
 - Add Version Parameter
+- Add more console Parameter
