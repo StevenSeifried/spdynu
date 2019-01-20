@@ -1,0 +1,9 @@
+[Unit]
+Description=spdyn Updater
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/spdynu
+
+[Install]
+WantedBy=multi-user.target
