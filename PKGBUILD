@@ -1,4 +1,4 @@
-# Maintainer: Steven Seifried <gitlab@canox.net>
+1# Maintainer: Steven Seifried <gitlab@canox.net>
 pkgname=spdynu
 pkgver=2018.11
 pkgrel=0
@@ -19,8 +19,9 @@ gcc spdynUpdater.c -o spdynu
 }
 
 package() {
-  install -Dvm755 "${srcdir}/spdynu" "${pkgdir}/usr/spdynu"
-  install -Dvm755 "${srcdir}/spdynu.conf" "${pkgdir}/etc/spdynu.conf"
-  install -Dvm755 "${srcdir}/spdynu.service" "${pkgdir}/etc/systemd/system/spdynu.service"
-  install -Dvm755 "${srcdir}/spdynu.timer" "${pkgdir}/etc/systemd/system/spdynu.timer"
+  cp "${srcdir}/spdynu" "${pkgdir}/usr/spdynu"
+  chmod u+x "${pkgdir}/usr/spdynu"
+  cp "${srcdir}/spdynu.conf" "${pkgdir}/etc/spdynu.conf"
+  cp "${srcdir}/spdynu.service" "${pkgdir}/etc/systemd/system/spdynu.service"
+  cp "${srcdir}/spdynu.timer" "${pkgdir}/etc/systemd/system/spdynu.timer"
 }
