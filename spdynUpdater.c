@@ -1,6 +1,6 @@
 /***************************************************************
  Copyright (C) 2014 by 3S-Berlin
- Copyright (C) 2017-2018 by Steven Seifried
+ Copyright (C) 2017-2019 by Steven Seifried
  
  This program is free software; you can redistribute and/or
  modify it under the terms of the GNU General Public License
