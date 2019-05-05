@@ -28,8 +28,6 @@ For armf
 
 echo "deb [arch=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
 
-An AUR Package is also available under [https://aur.archlinux.org/packages/spdynu/](https://aur.archlinux.org/packages/spdynu/)
-
 # TODO
 
 - Add IPv6 Support
