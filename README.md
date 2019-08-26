@@ -20,10 +20,6 @@ For amd64
 
 echo "deb [arch=amd64] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
 
-For arm64
-
-echo "deb [arch=arm64] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
-
 For armf
 
 echo "deb [arch=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/sources.list.d/canoxnet.list
@@ -33,3 +29,4 @@ echo "deb [arch=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/s
 - Add IPv6 Support
 - Add Version Parameter
 - Add more console Parameter
+- Make RPM and AUR Package
