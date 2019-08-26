@@ -1,3 +1,5 @@
+Development takes place temporarily on GitHub! https://github.com/StevenSeifried/spdynu
+
 The spdynu is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client (Domain still offline)
 
 Feel free to read the TODO section below and help with the client to improve or to expand with 
@@ -28,5 +30,4 @@ echo "deb [arch=armhf] https://apt.canox.net/ bionic main" | sudo tee /etc/apt/s
 
 - Add IPv6 Support
 - Add Version Parameter
-- Add more console Parameter
 - Make RPM and AUR Package
