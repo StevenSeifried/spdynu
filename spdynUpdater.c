@@ -167,6 +167,7 @@ int main(int argc , char *argv[])
 	{
 		writeLog("Error reading the config file in %s", confFileName);
 		// notify user of error
+		printf("spdynu 2019.10\n");
 		printf("Error reading the config file in %s\n", confFileName);
 		return 1;
 	}
