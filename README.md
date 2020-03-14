@@ -1,3 +1,9 @@
+# spdynu
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/StevenSeifried/spdynu?style=flat-square) ![GitHub](https://img.shields.io/github/license/StevenSeifried/spdynu?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues-raw/StevenSeifried/spdynu?style=flat-square) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/StevenSeifried/spdynu?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/StevenSeifried/spdynu?style=flat-square) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/StevenSeifried/spdynu?style=flat-square)
+![AUR version](https://img.shields.io/aur/version/spdynu?style=flat-square)
+
 The spdynu is based on the spdns Dynamic DNS Update-Client from http://my5cent.spdns.de/de/posts/spdns-dynamic-dns-update-client (Domain still offline)
 
 Feel free to read the TODO section below and help with the client to improve or to expand with 
