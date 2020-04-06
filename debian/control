@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Steven Seifried <gitlab@canox.net>
 Build-Depends: debhelper (>=10)
 Standards-Version: 4.1.3
-Homepage: https://gitlab.com/CANOXNET/spdynu
+Homepage: https://github.com/StevenSeifried/spdynu
 
 Package: spdynu
 Architecture: all
